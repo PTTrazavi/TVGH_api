@@ -1,0 +1,11 @@
+version: '2.2'
+services:
+  flask:
+    build: .
+    container_name: tvgh_api
+    stdin_open: true
+    tty: true
+    volumes:
+      - /home/jeremylai/docker_projects/TVGH_api/app:/workspace
+    ports:
+      - "15001:15001"

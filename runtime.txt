@@ -1,0 +1,1 @@
+in mac, just workon detectron2 virtual env don't need to use Docker
