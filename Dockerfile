@@ -29,4 +29,5 @@ RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6  -y
 RUN mkdir /workspace
 WORKDIR /workspace
-ENTRYPOINT bash
+# ENTRYPOINT bash
+CMD ["python3", "/workspace/bin/run.py"]
